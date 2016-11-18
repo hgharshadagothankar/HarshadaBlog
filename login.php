@@ -61,14 +61,14 @@ require_once("config.php");
 }
 
 ?>
-
-
 <?php require_once("header.php"); ?>
 <div id='content-wrap'>
 	<div id='content'>
 		<div id='main'>
 
 			<?php
+			
+			
 				echo "<blockquote>";
 				print_r($errors);
 				echo "</blockquote>";
