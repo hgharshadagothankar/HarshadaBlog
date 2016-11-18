@@ -30,9 +30,9 @@ $activeUser = fetchActiveUsers($start_from,$num_rec_per_page);
 					    else
 						    echo '<a class="admindisable" href="processRevoke.php?flag=admin&UserID='.$displayUser['UserID'].'">Admin</a>';
 					    if($displayUser['delUser']==0)
-					    echo '<a class="admin" href="processManage.php?flag=delete&UserID='.$displayUser['UserID'].'">Delete</a>';
+					    echo '<a class="admin" href="processManage.php?flag=delete&UserID='.$displayUser['UserID'].'">DeActivate</a>';
 					    else
-						    echo '<a class="admindisable" href="processRevoke.php?flag=delete&UserID='.$displayUser['UserID'].'">Delete</a>';
+						    echo '<a class="admindisable" href="processRevoke.php?flag=delete&UserID='.$displayUser['UserID'].'">Activate</a>';
 					    if($displayUser['roleSuperUser']==0)
 					    echo '<a class="admin" href="processManage.php?flag=superUser&UserID='.$displayUser['UserID'].'">Super User</a><br><br>';
 					    else

@@ -12,7 +12,7 @@ if(isUserLoggedIn()) {
 	echo "
 	<ul>
 		<li><a href='myaccount.php'>Account Home</a></li>";
-if(isAdmin()) {
+if(isAdmin() || isSuperUSer()) {
 	echo "<li>
 		<span class=\"dropdown\">
 	<span class=\"dropbtn\">View Blog</span>

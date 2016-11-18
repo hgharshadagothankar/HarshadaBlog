@@ -4,7 +4,7 @@ require_once("config.php");
 
 //Prevent the user visiting the logged in page if he/she is already logged in
 	if(isUserLoggedIn()) { header("Location: myaccount.php"); die(); }
-	print_r($_POST);
+	//print_r($_POST);
 
 	//Forms posted
 	if(!empty($_POST)) {
@@ -19,16 +19,16 @@ require_once("config.php");
 
 
 	if($username == "") {
-		$errors[] = "enter valid username";
+		$errors[] = "Enter valid username";
 	}
 
 	if($firstname == "") {
-		$errors[] = "enter valid first name";
+		$errors[] = "Enter valid first name";
 	}
 
   if($lastname == "")
   {
-	$errors[] = "enter valid last name";
+	$errors[] = "Enter valid last name";
   }
 
 

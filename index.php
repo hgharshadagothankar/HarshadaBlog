@@ -14,9 +14,12 @@
 		header("Location: myaccount.php");
 		die();
 	}
-
+$num_rec_per_page=5;
+if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
+$start_from = ($page-1) * $num_rec_per_page;
+$allblogs = fetchAllBlogs($start_from,$num_rec_per_page);
 	// call to fetchallblogs function from functions.php
-	$allblogs = fetchAllBlogs();
+	
 
 	echo "
 			<div id='content-wrap'>
@@ -49,13 +52,19 @@
 										<br><br>
 										";
 							}
-							echo "
-					</div>
+$total_records=fetchBlogCount();
+$total_pages = ceil($total_records / $num_rec_per_page);
+
+echo "<a href='index.php?page=1'>".'|<'."</a> "; // Goto 1st page
+
+for ($i=1; $i<=$total_pages; $i++) {
+	echo "<a href='index.php?page=".$i."'>".$i."</a> ";
+};
+echo "<a href='index.php?page=$total_pages'>".'>|'."</a> "; // Goto last page
 
 
-
-
-	";
+echo "</div>";?>
+<?php
 
 require_once("footer.php");
-
+?>

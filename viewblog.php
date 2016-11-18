@@ -2,7 +2,13 @@
 <head>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
 </head>
+<!--<script>
+	function goBack() {
+		window.history.back();
+	}
+</script>-->
 
+<script src="js/back.js"></script>
 </html>
 <?php
 
@@ -20,7 +26,7 @@ $thisblog = fetchThisBlog($thisblogid);
 		<?php
 			echo "<h1>"; print $thisblog['title']; echo "</h1>";
 		  echo "<pre><code class=javascript>"; print $thisblog['blogcontent']; echo "</code></pre>";
-		echo "<a  href='viewmyblogs.php'><div class='admin'>Back</div></a>";
+		echo "<a onclick=goBack()><div class='admin'>Back</div></a>";
 		?>
 	</div>
 

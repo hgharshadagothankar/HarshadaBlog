@@ -59,7 +59,7 @@ function createNewUser($username, $firstname, $lastname, $email, $password) {
   //echo $newpassword;
 
   $stmt = $mysqli->prepare(
-    "INSERT INTO " . $db_table_prefix . "UserDetails (
+    "INSERT INTO " . $db_table_prefix . "userdetails (
 		UserID,
 		UserName,
 		FirstName,
@@ -270,7 +270,7 @@ function fetchAllUsers() {
 }
 
 //function to fetch all the blogs that are available. was not ordered - fix applied
-function fetchAllBlogs() {
+function fetchAllBlogs($start_from,$num_rec_per_page) {
   global $mysqli,$db_table_prefix;
   $stmt = $mysqli->prepare("SELECT
 		bloglisting.blogid,
@@ -289,9 +289,8 @@ function fetchAllBlogs() {
 	 INNER JOIN userdetails ON whomadewho.userid = userdetails.UserID
 	 INNER JOIN blogcontent ON blogcontent.blogid = bloglisting.blogid
    WHERE bloglisting.publish = 1
-  
 	 ORDER BY bloglisting.datecreated DESC
-		");
+	 LIMIT ".$start_from.",".$num_rec_per_page);
 
   $stmt->execute();
   $stmt->bind_result($blogid, $title, $datecreated, $deleteflag, $active, $userid, $blogcontent, $username, $firstname, $lastname, $email);
@@ -771,6 +770,38 @@ function fetchBlogCount() {
 	$stmt->execute();
 	//$stmt->bind_result($UserID, $UserName, $FirstName, $LastName, $Email, $Password, $MemberSince, $Active);
 	$stmt->execute();
+	$stmt->store_result();
+	$num_returns = $stmt->num_rows;
+	$stmt->close();
+	return ($num_returns);
+}
+
+
+
+function fetchAllBlogsCount() {
+	global $mysqli,$db_table_prefix;
+	$stmt = $mysqli->prepare("SELECT
+		bloglisting.blogid,
+		bloglisting.title,
+	    bloglisting.datecreated,
+	    bloglisting.deleteflag,
+	    bloglisting.active,
+	    whomadewho.userid,
+	    blogcontent.blogcontent,
+	    userdetails.UserName,
+	    userdetails.FirstName,
+	    userdetails.LastName,
+	    userdetails.Email
+
+        FROM whomadewho INNER JOIN bloglisting ON whomadewho.blogid = bloglisting.blogid
+	 INNER JOIN userdetails ON whomadewho.userid = userdetails.UserID
+	 INNER JOIN blogcontent ON blogcontent.blogid = bloglisting.blogid
+   WHERE bloglisting.publish = 1
+	 ORDER BY bloglisting.datecreated DESC
+		");
+	
+	$stmt->execute();
+	//$stmt->bind_result($blogid, $title, $datecreated, $deleteflag, $active, $userid, $blogcontent, $username, $firstname, $lastname, $email);
 	$stmt->store_result();
 	$num_returns = $stmt->num_rows;
 	$stmt->close();
