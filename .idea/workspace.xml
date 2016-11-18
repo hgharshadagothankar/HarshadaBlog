@@ -29,34 +29,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+            <state relative-caret-position="825">
+              <caret line="203" column="40" selection-start-line="203" selection-start-column="40" selection-end-line="203" selection-end-column="40" />
               <folding>
-                <marker date="1479439607034" expanded="true" signature="1294:1541" ph="INSERT INTO ${$db_table_prefix}UserDetails... " />
-                <marker date="1479439607034" expanded="true" signature="1897:2067" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="2696:2833" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="3377:3535" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="3951:4113" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="4677:4814" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="5447:6040" ph="SELECT blogl... whomadewho" />
-                <marker date="1479439607034" expanded="true" signature="6848:7303" ph="SELECT blogl... whomadewho" />
-                <marker date="1479439607034" expanded="true" signature="8013:8561" ph="SELECT blogl... whomadewho" />
-                <marker date="1479439607034" expanded="true" signature="9633:9773" ph="INSERT INTO bloglisting... " />
-                <marker date="1479439607034" expanded="true" signature="9933:10010" ph="INSERT INTO blogcontent... " />
-                <marker date="1479439607034" expanded="true" signature="10171:10254" ph="INSERT INTO whomadewho... " />
-                <marker date="1479439607034" expanded="true" signature="10770:10974" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="10770:10976" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="10770:10987" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="10770:10988" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="11657:11832" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="14427:14644" ph="SELECT blogl... bloglisting" />
-                <marker date="1479439607034" expanded="true" signature="14427:14651" ph="SELECT blogl... bloglisting" />
-                <marker date="1479439607034" expanded="true" signature="14427:14668" ph="SELECT blogl... bloglisting" />
-                <marker date="1479439607034" expanded="true" signature="16365:16374" ph="SELECT UserI... ${$db_table_prefix}" />
-                <marker date="1479439607034" expanded="true" signature="16365:16542" ph="SELECT blogl... bloglisting" />
+                <marker date="1479440130151" expanded="true" signature="1294:1541" ph="INSERT INTO ${$db_table_prefix}UserDetails... " />
+                <marker date="1479440130151" expanded="true" signature="1897:2067" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="2696:2833" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="3377:3535" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="3951:4113" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="4677:4814" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="5447:6040" ph="SELECT blogl... whomadewho" />
+                <marker date="1479440130151" expanded="true" signature="6848:7303" ph="SELECT blogl... whomadewho" />
+                <marker date="1479440130151" expanded="true" signature="8013:8561" ph="SELECT blogl... whomadewho" />
+                <marker date="1479440130151" expanded="true" signature="9633:9773" ph="INSERT INTO bloglisting... " />
+                <marker date="1479440130151" expanded="true" signature="9933:10010" ph="INSERT INTO blogcontent... " />
+                <marker date="1479440130151" expanded="true" signature="10171:10254" ph="INSERT INTO whomadewho... " />
+                <marker date="1479440130151" expanded="true" signature="10770:10974" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="10770:10976" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="10770:10987" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="10770:10988" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="11657:11832" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="14427:14644" ph="SELECT blogl... bloglisting" />
+                <marker date="1479440130151" expanded="true" signature="14427:14651" ph="SELECT blogl... bloglisting" />
+                <marker date="1479440130151" expanded="true" signature="14427:14668" ph="SELECT blogl... bloglisting" />
+                <marker date="1479440130151" expanded="true" signature="16365:16374" ph="SELECT UserI... ${$db_table_prefix}" />
+                <marker date="1479440130151" expanded="true" signature="16365:16542" ph="SELECT blogl... bloglisting" />
               </folding>
             </state>
           </provider>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db-settings.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db-settings.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state relative-caret-position="400">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -217,8 +217,8 @@
         <option value="$PROJECT_DIR$/viewblog.php" />
         <option value="$PROJECT_DIR$/viewAllBlogs.php" />
         <option value="$PROJECT_DIR$/viewmyblogs.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/db-settings.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -467,12 +467,12 @@
       <workItem from="1478903837794" duration="10600000" />
       <workItem from="1479249982983" duration="2857000" />
       <workItem from="1479309114602" duration="26284000" />
-      <workItem from="1479396761190" duration="19073000" />
+      <workItem from="1479396761190" duration="19534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58814000" />
+    <option name="totallyTimeSpent" value="59275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="2574" height="1390" extended-state="0" />
@@ -589,28 +589,28 @@
         <state relative-caret-position="0">
           <caret line="416" column="0" selection-start-line="416" selection-start-column="0" selection-end-line="420" selection-end-column="1" />
           <folding>
-            <marker date="1479439607034" expanded="true" signature="1294:1541" ph="INSERT INTO ${$db_table_prefix}UserDetails... " />
-            <marker date="1479439607034" expanded="true" signature="1897:2067" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="2696:2833" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="3377:3535" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="3951:4113" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="4677:4814" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="5447:6040" ph="SELECT blogl... whomadewho" />
-            <marker date="1479439607034" expanded="true" signature="6848:7303" ph="SELECT blogl... whomadewho" />
-            <marker date="1479439607034" expanded="true" signature="8013:8561" ph="SELECT blogl... whomadewho" />
-            <marker date="1479439607034" expanded="true" signature="9633:9773" ph="INSERT INTO bloglisting... " />
-            <marker date="1479439607034" expanded="true" signature="9933:10010" ph="INSERT INTO blogcontent... " />
-            <marker date="1479439607034" expanded="true" signature="10171:10254" ph="INSERT INTO whomadewho... " />
-            <marker date="1479439607034" expanded="true" signature="10770:10974" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="10770:10976" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="10770:10987" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="10770:10988" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="11657:11832" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="14427:14644" ph="SELECT blogl... bloglisting" />
-            <marker date="1479439607034" expanded="true" signature="14427:14651" ph="SELECT blogl... bloglisting" />
-            <marker date="1479439607034" expanded="true" signature="14427:14668" ph="SELECT blogl... bloglisting" />
-            <marker date="1479439607034" expanded="true" signature="16365:16374" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="16365:16542" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="1294:1541" ph="INSERT INTO ${$db_table_prefix}UserDetails... " />
+            <marker date="1479440130151" expanded="true" signature="1897:2067" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="2696:2833" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="3377:3535" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="3951:4113" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="4677:4814" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="5447:6040" ph="SELECT blogl... whomadewho" />
+            <marker date="1479440130151" expanded="true" signature="6848:7303" ph="SELECT blogl... whomadewho" />
+            <marker date="1479440130151" expanded="true" signature="8013:8561" ph="SELECT blogl... whomadewho" />
+            <marker date="1479440130151" expanded="true" signature="9633:9773" ph="INSERT INTO bloglisting... " />
+            <marker date="1479440130151" expanded="true" signature="9933:10010" ph="INSERT INTO blogcontent... " />
+            <marker date="1479440130151" expanded="true" signature="10171:10254" ph="INSERT INTO whomadewho... " />
+            <marker date="1479440130151" expanded="true" signature="10770:10974" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="10770:10976" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="10770:10987" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="10770:10988" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="11657:11832" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="14427:14644" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="14427:14651" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="14427:14668" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="16365:16374" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="16365:16542" ph="SELECT blogl... bloglisting" />
           </folding>
         </state>
       </provider>
@@ -934,42 +934,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/db-settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
-          <folding>
-            <marker date="1479439607034" expanded="true" signature="1294:1541" ph="INSERT INTO ${$db_table_prefix}UserDetails... " />
-            <marker date="1479439607034" expanded="true" signature="1897:2067" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="2696:2833" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="3377:3535" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="3951:4113" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="4677:4814" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="5447:6040" ph="SELECT blogl... whomadewho" />
-            <marker date="1479439607034" expanded="true" signature="6848:7303" ph="SELECT blogl... whomadewho" />
-            <marker date="1479439607034" expanded="true" signature="8013:8561" ph="SELECT blogl... whomadewho" />
-            <marker date="1479439607034" expanded="true" signature="9633:9773" ph="INSERT INTO bloglisting... " />
-            <marker date="1479439607034" expanded="true" signature="9933:10010" ph="INSERT INTO blogcontent... " />
-            <marker date="1479439607034" expanded="true" signature="10171:10254" ph="INSERT INTO whomadewho... " />
-            <marker date="1479439607034" expanded="true" signature="10770:10974" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="10770:10976" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="10770:10987" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="10770:10988" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="11657:11832" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="14427:14644" ph="SELECT blogl... bloglisting" />
-            <marker date="1479439607034" expanded="true" signature="14427:14651" ph="SELECT blogl... bloglisting" />
-            <marker date="1479439607034" expanded="true" signature="14427:14668" ph="SELECT blogl... bloglisting" />
-            <marker date="1479439607034" expanded="true" signature="16365:16374" ph="SELECT UserI... ${$db_table_prefix}" />
-            <marker date="1479439607034" expanded="true" signature="16365:16542" ph="SELECT blogl... bloglisting" />
-          </folding>
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db-settings.php">
+    <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="825">
+          <caret line="203" column="40" selection-start-line="203" selection-start-column="40" selection-end-line="203" selection-end-column="40" />
+          <folding>
+            <marker date="1479440130151" expanded="true" signature="1294:1541" ph="INSERT INTO ${$db_table_prefix}UserDetails... " />
+            <marker date="1479440130151" expanded="true" signature="1897:2067" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="2696:2833" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="3377:3535" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="3951:4113" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="4677:4814" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="5447:6040" ph="SELECT blogl... whomadewho" />
+            <marker date="1479440130151" expanded="true" signature="6848:7303" ph="SELECT blogl... whomadewho" />
+            <marker date="1479440130151" expanded="true" signature="8013:8561" ph="SELECT blogl... whomadewho" />
+            <marker date="1479440130151" expanded="true" signature="9633:9773" ph="INSERT INTO bloglisting... " />
+            <marker date="1479440130151" expanded="true" signature="9933:10010" ph="INSERT INTO blogcontent... " />
+            <marker date="1479440130151" expanded="true" signature="10171:10254" ph="INSERT INTO whomadewho... " />
+            <marker date="1479440130151" expanded="true" signature="10770:10974" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="10770:10976" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="10770:10987" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="10770:10988" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="11657:11832" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="14427:14644" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="14427:14651" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="14427:14668" ph="SELECT blogl... bloglisting" />
+            <marker date="1479440130151" expanded="true" signature="16365:16374" ph="SELECT UserI... ${$db_table_prefix}" />
+            <marker date="1479440130151" expanded="true" signature="16365:16542" ph="SELECT blogl... bloglisting" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -131,7 +131,7 @@ function isUserLoggedIn() {
   $stmt = $mysqli->prepare("SELECT
 		UserID,
 		Password
-		FROM ".$db_table_prefix."UserDetails
+		FROM ".$db_table_prefix."userdetails
 		WHERE
 		UserID = ?
 		AND
@@ -170,7 +170,7 @@ function isAdmin() {
 	$stmt = $mysqli->prepare("SELECT
 		UserID,
 		Password
-		FROM ".$db_table_prefix."UserDetails
+		FROM ".$db_table_prefix."userdetails
 		WHERE
 		UserID = ?
 		AND
@@ -201,7 +201,7 @@ function isSuperUSer() {
 	$stmt = $mysqli->prepare("SELECT
 		UserID,
 		Password
-		FROM ".$db_table_prefix."UserDetails
+		FROM ".$db_table_prefix."userdetails
 		WHERE
 		UserID = ?
 		AND
