@@ -139,7 +139,7 @@ function isUserLoggedIn() {
 		AND
 		active = 1
 		LIMIT 1");
-  $stmt->bind_param("is", $loggedInUser->user_id, $loggedInUser->hash_pw);
+  $stmt->bind_param("ss", $loggedInUser->user_id, $loggedInUser->hash_pw);
   $stmt->execute();
   $stmt->store_result();
   $num_returns = $stmt->num_rows;
