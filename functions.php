@@ -101,7 +101,7 @@ function fetchUserDetails($username) {
 		Password,
 		MemberSince,
 		Active
-		FROM ".$db_table_prefix."UserDetails
+		FROM ".$db_table_prefix."userdetails
 		WHERE
 		UserName = ?
 		LIMIT 1");
@@ -280,13 +280,13 @@ function fetchAllBlogs() {
 	    bloglisting.active,
 	    whomadewho.userid,
 	    blogcontent.blogcontent,
-	    UserDetails.UserName,
-	    UserDetails.FirstName,
-	    UserDetails.LastName,
-	    UserDetails.Email
+	    userdetails.UserName,
+	    userdetails.FirstName,
+	    userdetails.LastName,
+	    userdetails.Email
 
         FROM whomadewho INNER JOIN bloglisting ON whomadewho.blogid = bloglisting.blogid
-	 INNER JOIN UserDetails ON whomadewho.userid = UserDetails.UserID
+	 INNER JOIN userdetails ON whomadewho.userid = userdetails.UserID
 	 INNER JOIN blogcontent ON blogcontent.blogid = bloglisting.blogid
    WHERE bloglisting.publish = 1
   
@@ -365,13 +365,13 @@ function fetchThisBlog($blogid) {
 	    bloglisting.active,
 	    whomadewho.userid,
 	    blogcontent.blogcontent,
-	    UserDetails.UserName,
-	    UserDetails.FirstName,
-	    UserDetails.LastName,
-	    UserDetails.Email
+	    userdetails.UserName,
+	    userdetails.FirstName,
+	    userdetails.LastName,
+	    userdetails.Email
 
         FROM whomadewho INNER JOIN bloglisting ON whomadewho.blogid = bloglisting.blogid
-	 INNER JOIN UserDetails ON whomadewho.userid = UserDetails.UserID
+	 INNER JOIN userdetails ON whomadewho.userid = userdetails.UserID
 	 INNER JOIN blogcontent ON blogcontent.blogid = bloglisting.blogid
 		WHERE bloglisting.blogid = ?");
   $stmt->bind_param("s", $blogid);
@@ -489,7 +489,7 @@ function fetchActiveUsers($offset,$left_rec) {
 		roleAdmin,
 		roleSuperUser,
 		delUser
-		FROM ".$db_table_prefix."UserDetails
+		FROM ".$db_table_prefix."userdetails
 		where active =1
 		LIMIT ".$offset.",".$left_rec);
 	$stmt->execute();
@@ -522,7 +522,7 @@ function fetchActiveUSersCount() {
 		Password,
 		MemberSince,
 		Active
-		FROM ".$db_table_prefix."UserDetails
+		FROM ".$db_table_prefix."userdetails
 		where active =1
 		order by UserName ");
 	
@@ -538,7 +538,7 @@ function fakedeleteAdmin($userid)
 {
 	global $mysqli, $db_table_prefix;
 	$stmt = $mysqli->prepare(
-		"UPDATE " . $db_table_prefix . "UserDetails
+		"UPDATE " . $db_table_prefix . "userdetails
 		SET
 		roleAdmin=1
 		WHERE
@@ -555,7 +555,7 @@ function fakedeleteUser($userid)
 {
 	global $mysqli, $db_table_prefix;
 	$stmt = $mysqli->prepare(
-		"UPDATE " . $db_table_prefix . "UserDetails
+		"UPDATE " . $db_table_prefix . "userdetails
 		SET
 		delUser=1
 		WHERE
@@ -572,7 +572,7 @@ function fakedeleteSuperUser($userid)
 {
 	global $mysqli, $db_table_prefix;
 	$stmt = $mysqli->prepare(
-		"UPDATE " . $db_table_prefix . "UserDetails
+		"UPDATE " . $db_table_prefix . "userdetails
 		SET
 		roleSuperUser=1
 		WHERE
@@ -591,7 +591,7 @@ function revokedeleteAdmin($userid)
 {
 	global $mysqli, $db_table_prefix;
 	$stmt = $mysqli->prepare(
-		"UPDATE " . $db_table_prefix . "UserDetails
+		"UPDATE " . $db_table_prefix . "userdetails
 		SET
 		roleAdmin=0
 		WHERE
@@ -608,7 +608,7 @@ function revokedeleteUser($userid)
 {
 	global $mysqli, $db_table_prefix;
 	$stmt = $mysqli->prepare(
-		"UPDATE " . $db_table_prefix . "UserDetails
+		"UPDATE " . $db_table_prefix . "userdetails
 		SET
 		delUser=0
 		WHERE
@@ -625,7 +625,7 @@ function revokedeleteSuperUser($userid)
 {
 	global $mysqli, $db_table_prefix;
 	$stmt = $mysqli->prepare(
-		"UPDATE " . $db_table_prefix . "UserDetails
+		"UPDATE " . $db_table_prefix . "userdetails
 		SET
 		roleSuperUser=0
 		WHERE

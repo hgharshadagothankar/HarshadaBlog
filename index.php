@@ -15,6 +15,7 @@
 			<div id='content-wrap'>
   			<div id='content'>
     			<div id='main'>";
+            
 							foreach($allblogs as $bloginfo) {
 								$summary = truncate_chars($bloginfo['blogcontent'], 150, '...');
 								//$summary  = $bloginfo['blogcontent'];
