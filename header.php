@@ -5,16 +5,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link rel="stylesheet" href="style/style.css" type="text/css" />
 
-</html>
 </head>
 <body>
 <div id="header">
 	<div id="header-content">
-		<h1 id="logo">IS667<span class="orange">Blogs</span></h1>
-		<h2 id="slogan">its so much fun with PHP</h2>
+		<h1 id="logo">Harshada's<span class="orange">Blogs</span></h1>
+		<h2 id="slogan">Find creativity in You.</h2>
 		<div id="header-links">
 		
 		</div>
 		<?php require_once("left-nav.php"); ?>
 	</div>
 </div>
+</body>
+</html>

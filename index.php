@@ -17,7 +17,15 @@
 $num_rec_per_page=5;
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
 $start_from = ($page-1) * $num_rec_per_page;
+
+
+
+$blogTitle=isset($_GET["search_query"])?$_GET['search_query']:null;
+//print("blog title".$blogTitle);
+if($blogTitle==null)
 $allblogs = fetchAllBlogs($start_from,$num_rec_per_page);
+else
+	$allblogs = fetchBlogTitle($blogTitle,$start_from,$num_rec_per_page);
 	// call to fetchallblogs function from functions.php
 	
 
@@ -25,7 +33,7 @@ $allblogs = fetchAllBlogs($start_from,$num_rec_per_page);
 			<div id='content-wrap'>
   			<div id='content'>
     			<div id='main'>";
-            
+            if($allblogs>0){
 							foreach($allblogs as $bloginfo) {
 								$summary = truncate_chars($bloginfo['blogcontent'], 150, '...');
 								//$summary  = $bloginfo['blogcontent'];
@@ -61,7 +69,10 @@ for ($i=1; $i<=$total_pages; $i++) {
 	echo "<a href='index.php?page=".$i."'>".$i."</a> ";
 };
 echo "<a href='index.php?page=$total_pages'>".'>|'."</a> "; // Goto last page
-
+            }
+            else{
+            	echo "<h2>No Content to display</h2>";
+            }
 
 echo "</div>";?>
 <?php

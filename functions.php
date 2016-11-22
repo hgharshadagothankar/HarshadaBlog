@@ -807,3 +807,49 @@ function fetchAllBlogsCount() {
 	$stmt->close();
 	return ($num_returns);
 }
+//Search blog from title
+
+//function to fetch all the blogs that are available. was not ordered - fix applied
+function fetchBlogTitle($blogTitle,$start_from,$num_rec_per_page) {
+	global $mysqli,$db_table_prefix;
+	$row[]=0;
+	$stmt = $mysqli->prepare("SELECT
+		bloglisting.blogid,
+		bloglisting.title,
+	    bloglisting.datecreated,
+	    bloglisting.deleteflag,
+	    bloglisting.active,
+	    whomadewho.userid,
+	    blogcontent.blogcontent,
+	    userdetails.UserName,
+	    userdetails.FirstName,
+	    userdetails.LastName,
+	    userdetails.Email
+
+        FROM whomadewho INNER JOIN bloglisting ON whomadewho.blogid = bloglisting.blogid
+	 INNER JOIN userdetails ON whomadewho.userid = userdetails.UserID
+	 INNER JOIN blogcontent ON blogcontent.blogid = bloglisting.blogid
+   WHERE bloglisting.publish = 1
+   AND   bloglisting.title =  ?
+	 ORDER BY bloglisting.datecreated DESC
+	 LIMIT ".$start_from.",".$num_rec_per_page);
+	$stmt->bind_param("s", $blogTitle);
+	$stmt->execute();
+	$stmt->bind_result($blogid, $title, $datecreated, $deleteflag, $active, $userid, $blogcontent, $username, $firstname, $lastname, $email);
+	while ($stmt->fetch()){
+		$row[] = array('blogid' => $blogid,
+			'title' => $title,
+			'datecreated' => $datecreated,
+			'deleteflag' => $deleteflag,
+			'active' => $active,
+			'userid' => $userid,
+			'blogcontent' => $blogcontent,
+			'username' => $username,
+			'firstname' => $firstname,
+			'lastname' => $lastname,
+			'email'  => $email
+		);
+	}
+	$stmt->close();
+	return ($row);
+}
