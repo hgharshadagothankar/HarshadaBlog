@@ -61,12 +61,9 @@
     <div class="col float-left">
       <h2>Connect</h2>
       <ul class="columns">
-        <li class="top"><a target="blank" href="http://webpage.pace.edu/hg30569n/WebContent/"><strong>Portfolio</strong></a></li>
         <li><a href="https://github.com/hgharshadagothankar" target="blank"><strong>GitHub</strong></a></li>
         <li><a href="http://stackoverflow.com/users/5408254/harshada-gothankar" target="blank"><strong>StackOverFlow</strong></a></li>
-        <li><a href="https://twitter.com/hgharshada" target="blank"><strong>Twitter</strong></a></li>
-        <li><a href="https://www.instagram.com/harshadagothankar/" target="blank"><strong>Instagram</strong></a></li>
-        <li><a href="https://www.facebook.com/harshada.gothankar" target="blank"><strong>Facebook</strong></a></li>
+       
       </ul>
     </div>
     <div class="col2 float-right">
